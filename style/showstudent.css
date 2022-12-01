@@ -1,0 +1,298 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+
+body{
+    overflow-x: hidden;
+}
+.container{
+position:relative;
+width: 80%;
+height: 95vh;
+display: flex;
+justify-content:flex-start;
+align-items: center;
+flex-direction: column;
+background:gray;
+overflow: auto;
+}
+.container input{
+width:200px;
+height:30px;
+text-align:center;
+font-size:18px;
+}
+table{
+    border:0.5px solid black;
+    background:green;
+    overflow: auto;
+}
+table tr th,td{
+    white-space:nowrap;
+    padding:8px;
+    border:0.3px solid black;
+    text-align:center;
+    box-shadow:0px 0px 10px #fff;
+}
+#efrm{
+    visibility:hidden;
+}
+form{
+position: absolute;
+top:0px;
+left:25%;
+z-index: 100;
+width: 50%;
+min-height: 60%;
+background-color: gray;
+display: flex;
+justify-content:flex-start;
+align-items: center;
+flex-direction: column;
+
+}
+input[type='search']{
+position: relative;
+top:-10px;
+width:250px;
+left:250px;
+}
+form .input_field input{
+width: 60%;
+height: 30px;
+text-align: center;
+font-weight: bold;
+font-size: 16px;
+}
+form input[type='radio']{
+width: 15px;
+height: 15px;
+padding: 3px;
+margin-left: 5px;
+}
+.box{
+width:100%;
+min-height:400px;
+position:relative;
+top:10px;
+
+display: flex;
+justify-content:flex-start;
+align-items: center;
+flex-direction: column;
+}
+form .input_field{
+width: 80%;
+min-height: 7%;
+margin-top: 5px;
+display: flex;
+justify-content:space-between;
+align-items: center;
+flex-direction: row;
+
+}
+form button{
+width: 110px;
+height: 30px;
+background: #340;
+color: #fff;
+font-size: 16px;
+font-weight: bold;
+}
+.message{
+position: relative;
+width: 290px;
+height: 20px;
+transition: height 0.5s;
+overflow: hidden;
+}
+.message .success{
+position: absolute;
+left: 0px;
+top: 0px;
+width: 290px;
+text-align: center;
+background-color: #091;
+}
+.message .error{
+position: absolute;
+left: 0px;
+top: 0px;
+width: 290px;
+text-align: center;
+background-color: red;
+}
+form .crose{
+position: relative;
+right:-310px;
+top:10px;
+width:30px;
+height:30px;
+border-radius:50%;
+border:2px solid black;
+
+}
+form .crose:before{
+content:'';
+position:absolute;
+top:50%;
+left:0px;
+width:100%;
+height:5px;
+background:red;
+transform:rotate(45deg);
+}
+form .crose:after{
+content:'';
+position:absolute;
+top:50%;
+left:0px;
+width:100%;
+height:5px;
+background:red;
+transform:rotate(-45deg);
+}
+#delete{
+display:inline-block;
+width:70px;
+height:25px;
+text-align:center;
+line-height:25px;
+color:black;
+background:red;
+text-decoration:none;
+}
+#edit{
+display:inline-block;
+width:70px;
+height:25px;
+text-align:center;
+line-height:25px;
+color:#fff;
+background:black;
+text-decoration:none;
+}
+ul{
+width:100%;
+height:20px;
+display:flex;
+justify-content:center;
+align-items:center;
+}
+ul li{
+list-style: none;
+}
+ul li a{
+display:inline-block;
+width:25px;
+height:25px;
+margin-top: 18px;
+line-height:25px;
+text-align:center;
+margin-left: 3px;
+background:black;
+color:#fff;
+text-decoration:none;
+cursor: pointer;
+}
+.active{
+background:green;
+}
+@media only screen and (min-width:360px) and (max-width:960px){
+.container{
+position:relative;
+width: 100%;
+height: 100vh;
+display: flex;
+justify-content:flex-start;
+align-items: center;
+flex-direction: column;
+background: linear-gradient(#904,#340,#010);
+overflow: auto;
+}
+.box{
+width:100%;
+height:100%;
+display: flex;
+position: relative;
+justify-content:flex-start;
+align-items:flex-start;
+flex-direction: column;
+overflow:auto;
+}
+form{
+width: 100%;
+min-height: 60%;
+
+position:absolute;
+top:20px;
+left:0px;
+display: flex;
+justify-content:flex-start;
+align-items: center;
+flex-direction: column;
+
+}
+form .input_field input{
+width: 280px;
+height: 30px;
+text-align: center;
+font-weight: bold;
+font-size: 16px;
+}
+form input[type='radio']{
+width: 15px;
+height: 15px;
+padding: 3px;
+margin-left: 5px;
+}
+form .input_field{
+width: 100%;
+min-height: 7%;
+margin-top: 3px;
+display: flex;
+justify-content:center;
+align-items: center;
+flex-direction:column;
+
+}
+form button{
+width: 110px;
+height: 30px;
+margin-top:5px;
+background: #340;
+color: #fff;
+font-size: 16px;
+font-weight: bold;
+}
+
+form .crose{
+position: relative;
+right:100px;
+top:10px;
+width:30px;
+height:30px;
+border-radius:50%;
+border:2px solid black;
+
+}
+.box table{
+position:relative;
+top:30px;
+
+}
+input[type='search']{
+position:relative;
+top:20px;
+z-index: 10;
+width:250px;
+height:30px;
+left:80px;
+}
+.page{
+position: relative;
+top:40px;
+}
+}
